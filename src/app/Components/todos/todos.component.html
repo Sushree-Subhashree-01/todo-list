@@ -1,0 +1,16 @@
+<p>Todo works!</p>
+<div class="todo-container">
+  <h1>Todo List</h1>
+  
+  <div *ngIf="Data.length > 0">
+    <ul>
+      <li *ngFor="let todo of Data">
+        <strong>ID:</strong>{{ todo.id }}<br/>
+        <strong>Title:</strong>{{ todo.title }}<br/>
+        <strong>Completed:</strong>{{ todo.completed ? 'Yes' : 'No' }} 
+        <hr/>
+      </li>
+    </ul>
+  </div>
+
+</div>
